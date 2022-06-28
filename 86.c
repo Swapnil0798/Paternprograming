@@ -1,0 +1,40 @@
+#include<stdio.h>
+// Input:rows=4,cols=4
+//Output:
+//       a   b   c  d
+//       a   b   c  d
+//       a   b   c  d
+//       a   b   c  d
+
+void display(int irows,int icols)
+{
+    int i=0,j=0;
+    char ch='\0';
+   
+    for(i=1;i<=irows;i++)
+    {
+        for(j=1,ch='a';j<=icols;j++,ch++)
+        {
+    
+            printf("%c\t",ch);
+        }
+        printf("\n");
+    }
+}
+///////////////////////////////////////////
+// Date: 10/05/2022
+///////////////////////////////////////////
+int main()
+{  
+    int ivalue1=0;
+    int ivalue2=0;
+  
+    printf("enter rows\n");
+    scanf("%d",&ivalue1);
+   
+    printf("enter coloumn\n");
+    scanf("%d",&ivalue2);
+   
+    display(ivalue1,ivalue2);
+    return 0;
+}
